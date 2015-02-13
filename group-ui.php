@@ -261,11 +261,11 @@ include_once "./includes/header-ui.php";
 	<section class="content">
     	<div class="row">
         	<div class="inner-container">
-            	<div class="col-md-6">
+            	<div class="col-md-9">
                 	<img src = "<?php echo $group_logo; ?>" alt = "" style="height:90px; max-width:300px;"/>
                 </div>
                 
-                <div class="col-md-6 text-right" style="padding-top: 15px;">  
+                <div class="col-md-3 text-right" style="padding-top: 15px;">  
                 	<?php if(!$is_group_owner && !$is_group_member && $_SESSION['anon_user'] == 'false') { ?><p class="text-center"><a id="group_join_request" class="btn btn-tne" href="#" style="font-size: 16px; padding: 10px;"><i class="fa fa-user-plus"></i>Request to Join</a></p><?php } //Dont show Join button if owner or group member ?>					                  
                 </div> 
             </div><!-- / inner container -->
@@ -342,7 +342,7 @@ include_once "./includes/header-ui.php";
                     </div>
                     
                     <?php
-                    //privacy settings  
+                      
 					  //check group privacy status
 					  if ($group_privacy == 1) {
 											
