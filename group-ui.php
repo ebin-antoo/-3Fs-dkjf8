@@ -342,7 +342,7 @@ include_once "./includes/header-ui.php";
                     </div>
                     
                     <?php
-                      
+                    //privacy settings  
 					  //check group privacy status
 					  if ($group_privacy == 1) {
 											
